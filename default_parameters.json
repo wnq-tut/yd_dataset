@@ -1,0 +1,59 @@
+{
+    "n_epoch": 1,
+    "lr": 0.00005,
+    "lstm_dropout": 0.5,
+    "this_a_comment_1": "mfcc spec fbank plp",
+    "feature": "fbank",
+    "scatter_random": false,
+    "if_early_stopping": true,
+    "es_threshold": 0.70,
+    "if_bidirection": true,
+    "use_over_resampling": false,
+    "mfcc": {
+        "n_feature": 39,
+        "hidden_size": 128,
+        "batch_size_train": 32,
+        "batch_size_val": 32,
+        "if_norm": false
+    },
+    "mfcc_13": {
+        "n_feature": 13,
+        "hidden_size": 64,
+        "batch_size_train": 16,
+        "batch_size_val": 16,
+        "if_norm": false
+    },
+    "fbank": {
+        "n_feature": 23,
+        "hidden_size": 128,
+        "batch_size_train": 32,
+        "batch_size_val": 32,
+        "if_norm": true
+    },
+    "spec": {
+        "n_feature": 257,
+        "hidden_size": 512,
+        "batch_size_train": 32,
+        "batch_size_val": 32,
+        "if_norm": true
+    },
+    "plp": {
+        "n_feature": 39,
+        "hidden_size": 64,
+        "batch_size_train": 32,
+        "batch_size_val": 32,
+        "if_norm": false
+    },
+    "num_time_steps": 4482,
+    "lstm_num_layers": 2,
+    "l2_lambda": 0,
+    "if_sigmoid": false,
+    "this_a_comment_2": "MSE cross",
+    "loss_name": "MSE",
+    "this_a_comment_3": "sgd adam",
+    "optimizer_name": "adam",
+    "feature_folder": {
+        "feat": "feat",
+        "over_resampling": "over_resampling"
+    }
+}

@@ -1,0 +1,69 @@
+[
+    {   
+        "this_a_comment_0": "mis smooth total",
+        "dataset": "total",
+        "n_epoch": 1,
+        "lr": 0.00005,
+        "max_length": 1500,
+        "lstm_dropout": 0.5,
+        "this_a_comment_1": "mfcc spec fbank plp",
+        "feature": "fbank",
+        "num_encoder_layers": 6,
+        "use_checkpoint": true,
+        "scatter_random": false,
+        "if_early_stopping": false,
+        "es_threshold": 0.90,
+        "if_bidirection": false,
+        "if_change_d_model": false,
+        "use_over_resampling": true,
+        "mfcc": {
+            "n_feature": 39,
+            "d_model": 156,
+            "n_head": 2,
+            "hidden_size": 39,
+            "batch_size_train": 32,
+            "batch_size_val": 1,
+            "if_norm": true
+        },
+        "fbank": {
+            "n_feature": 23,
+            "d_model": 92,
+            "n_head": 2,
+            "hidden_size": 23,
+            "batch_size_train": 32,
+            "batch_size_val": 1,
+            "if_norm": true
+        },
+        "spec": {
+            "n_feature": 257,
+            "d_model": 256,
+            "n_head": 4,
+            "hidden_size": 257,
+            "batch_size_train": 4,
+            "batch_size_val": 1,
+            "if_norm": true
+        },
+        "plp": {
+            "n_feature": 39,
+            "d_model": 156,
+            "n_head": 4,
+            "hidden_size": 39,
+            "batch_size_train": 32,
+            "batch_size_val": 1,
+            "if_norm": true
+        },
+        "num_time_steps": 4482,
+        "lstm_num_layers": 2,
+        "l2_lambda": 0,
+        "if_sigmoid": true,
+        "this_a_comment_2": "MSE cross",
+        "loss_name": "MSE",
+        "this_a_comment_3": "sgd adam",
+        "optimizer_name": "adam",
+        "num_workers": 8,
+        "feature_folder": {
+            "feat": "feat",
+            "over_resampling": "over_resampling"
+        }
+    }
+]
